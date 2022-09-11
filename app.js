@@ -32,7 +32,7 @@ app.post('/sign_up', function(req,res){
         "phone":phone,
         "college": college
     }
-db.collection('details').insertOne(data,function(err, collection){
+db.collection('sign_up').insertOne(data,function(err, collection){
         if (err) throw err;
         console.log("Record inserted Successfully");
               
